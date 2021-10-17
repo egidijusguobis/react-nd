@@ -1,23 +1,13 @@
 // import './App.css';
 import Balloon from './Components/Balloon'
 
-const data = [
-  {color: 'red'},
-  {color: 'red'},
-  {color: 'red'},
-  {color: 'red'},
-  {color: 'red'},
-  {color: 'red'},
-  {color: 'red'},
-  {color: 'red'},
-  {color: 'red'},
-  {color: 'red'},
-]
+const data = new Array(10).fill()
 
 function App() {
   return(
     <>
-    {data.map((balloon, index) => <Balloon key={index} color={balloon.color}></Balloon>)}
+      <h1>Balloons popped:</h1>
+      {data.map((index) => <Balloon key={index}></Balloon>)}
     </>
   
   );
