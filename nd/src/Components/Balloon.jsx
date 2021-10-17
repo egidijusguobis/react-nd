@@ -13,14 +13,19 @@ class Balloon extends Component {
         this.setState({
             color: 'none',
         })
-        // console.log('labas');
+        //  console.log('labas');
     }
 
 
     render () {
         return (
             <>
-                <div className='balloon' onClick={this.click} style={{background: this.state.color}}></div>
+                <div className='balloon' onClick={this.click} style={{
+                    background: this.state.color,
+                    position: 'absolute',
+                    top: Math.random() * 400,
+                    left: Math.random() * 1000,
+                    }}></div>
             </> 
         )
     }
