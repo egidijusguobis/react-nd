@@ -1,16 +1,11 @@
-// import './App.css';
-import Balloon from './Components/Balloon'
-
-const data = new Array(10).fill()
+import Circles from './Components/Circles';
 
 function App() {
-  return(
-    <>
-      <h1>Balloons popped:</h1>
-      {data.map((index) => <Balloon key={index}></Balloon>)}
-    </>
-  
-  );
+
+    return (
+        <Circles/>
+    )
 }
+
 
 export default App;
